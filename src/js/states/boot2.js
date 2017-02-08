@@ -16,7 +16,7 @@ class Boot extends Phaser.State {
         
         this.stage.backgroundColor = window.getComputedStyle(document.body)['background-color'];
         this.world.resize(this.game.h2p_data.world_w, this.game.h2p_data.world_h);
-        console.log(this.game.h2p_data);
+        //console.log(this.game.h2p_data);
     }
 
     preload() {
@@ -99,8 +99,6 @@ class Boot extends Phaser.State {
             star.body.bounce.y = 0.7 + Math.random() * 0.2;
             star.body.collideWorldBounds = true;
         }
-        console.log(this.can_move)
-
 
         setTimeout(this.game.h2p_data.show, 500)
     }

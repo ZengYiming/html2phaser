@@ -16,7 +16,7 @@ class Boot extends Phaser.State {
         
         this.stage.backgroundColor = window.getComputedStyle(document.body)['background-color'];
         this.world.resize(this.world.width, this.game.h2p_data.world_h);
-        console.log(this.game.h2p_data);
+        //console.log(this.game.h2p_data);
     }
 
     preload() {
