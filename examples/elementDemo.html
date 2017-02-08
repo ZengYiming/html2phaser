@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>html2phaser</title>
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'onorientationchange' in window ? 'onorientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if(clientWidth>=750){
+                        docEl.style.fontSize = '100px';
+                    }else{
+                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                    }
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</head>
+<body>
+    <script src="//activity-codoon.b0.upaiyun.com/run_game-cdn/js/vendor/phaser.min.5df6d1b3.js"></script>
+    <div id="main_sec">
+
+        <div class="text">
+            <p>TitleTitleTitleTitleTitle</p>
+        </div>
+        <br>
+        <br>
+
+        <div id="mydiv">
+            <p>Cloud</p>
+            <p class="h2p_sprite platform" data-h2p_name="platform">Platform</p>
+            <p class="h2p_sprite can_move" data-h2p_name="can_move">Can Move</p>
+        </div>
+        <br>
+        <br>
+
+        <div class="text">
+            <p>content content content content content content </p>
+        </div>
+
+        <br>
+        <br>
+    </div>
+</body>
+</html>

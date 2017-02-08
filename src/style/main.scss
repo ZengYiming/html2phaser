@@ -1,0 +1,59 @@
+body {
+    width: 100%;
+    background-color: #abcabc !important;
+}
+canvas {
+  display: block;
+  cursor: none;
+}
+
+#mydiv {
+    position: relative;
+    background-color: lightblue;
+    width: 100%;
+    height: 200px;
+    .img {
+        height: 200px;
+        width: 200px;
+    }
+    p {
+        font-size: .6rem;
+    }
+    .hahaha {
+        float: right;
+    }
+    .title1 {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+    }
+    .platform {
+        position: absolute;
+        top: 60%;
+        left: 40%;
+    }
+    .can_move {
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+    }
+}
+
+.h2p_sprite {
+    background-color: red;
+}
+.text {
+    font-size: .5rem;
+    float: left;
+    &.right {
+        float: right;
+    }
+}
+
+//#image {
+//    width: 100%;
+//    img {
+//        width: 100%;
+//    }
+//}
+
