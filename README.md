@@ -5,6 +5,9 @@ html2phaser is Based on html2canvas. Transform dom element to phaser sprite。
 
     $ npm run dev
 
+* http://127.0.0.1:8989/bodydemo.html
+* http://127.0.0.1:8989/elementdemo.html
+
 ### Usage ###
 
 ``` 
