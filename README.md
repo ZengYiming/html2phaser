@@ -7,7 +7,7 @@ html2phaser is Based on html2canvas. Transform dom element to phaser sprite。
 
 ### Usage ###
 
-` 
+``` 
 import Boot from './states/boot';
 
 var h2p = new Html2phaser({
@@ -21,5 +21,5 @@ h2p.create().then(function(game) {
     game.state.add('boot', new Boot());
     game.state.start('boot');
 });
-`
+```
 
