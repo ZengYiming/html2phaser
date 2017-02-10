@@ -6,8 +6,8 @@ import Boot from './states/boot';
 import Boot2 from './states/boot2';
 
 
-//import Html2phaser from '../h2p/index';
-import Html2phaser from 'dist/js/html2phaser.js';
+import Html2phaser from '../h2p/index';
+//import Html2phaser from 'dist/js/html2phaser.js';
 
 //require('js/vendor/phaser.min.js');
 
